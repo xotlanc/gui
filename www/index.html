@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>GUI</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<p>The graphical user interface (GUI), is a type of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation, instead of text-based user interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer keyboard.
+</p>
+			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a>
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Dan Brown</h1>
+		  </div> 
+		</div> 
+		
+		<!-- Mobile device details page -->
+		<div data-role="page" id="details" data-dialog="true">
+			<div data-role="header" data-theme="a">
+				<h1>It's me</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<p id="deviceDetails">Place for device details ...</p>
+			</div>
+		</div>		
+		
+	</body>
+</html>
